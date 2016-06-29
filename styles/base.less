@@ -1,4 +1,5 @@
 @import "syntax-variables";
+@import "guides";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -311,4 +312,14 @@ atom-text-editor .search-results .marker.current-result .region,
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
+}
+
+.source.python {
+  .keyword.operator.logical.python {
+    color: @madoka;
+  }
+
+  .variable.parameter {
+    color: @nagisa;
+  }
 }
