@@ -1,0 +1,23 @@
+{
+  "name": "mahou-shoujo-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Magical Girl Syntax",
+  "keywords": [
+    "Puella Magi Madoka Magica",
+    "Madoka Magica",
+    "Homura Akemi",
+    "Mami Tomoe",
+    "Kyouko Sakura",
+    "Sayaka Miki",
+    "Madoka Kaname",
+    "Magical Girls",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/mahou-shoujo-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

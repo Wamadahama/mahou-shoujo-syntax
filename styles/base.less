@@ -1,0 +1,314 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-gray;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected;
+}
+
+.comment {
+  color: @light-gray;
+}
+
+.keyword {
+  color: @madoka;
+
+  &.control {
+    color: @madoka;
+  }
+
+  &.operator {
+    color: @syntax-text-color;
+  }
+
+
+  &.other.special-method {
+    color: @homura;
+  }
+
+  &.other.unit {
+    color: @sayaka;
+  }
+}
+
+.storage {
+  color: @sayaka;
+}
+
+.constant {
+  color: @kyouko;
+
+  &.character.escape {
+    color: @mami;
+  }
+
+  &.numeric {
+    color: @mami;
+  }
+
+  &.other.color {
+    color: @sayaka-off;
+  }
+
+  &.other.symbol {
+    color: @madoka-off;
+  }
+}
+
+.variable {
+  color: @madoka;
+
+  /* Custom for ruby */
+  .source.ruby.control {
+    color: @homura;
+  }
+
+  &.interpolation {
+    color: darken(@kyouko, 10%);
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color;
+  }
+}
+
+.invalid.illegal {
+  background-color: @kyouko-vibrant;
+  color: @syntax-background-color;
+}
+
+.string {
+  color: @mami;
+
+
+  &.regexp {
+    color: @homura;
+
+    .source.ruby.embedded {
+      color: @kyouko;
+    }
+  }
+
+  &.other.link {
+    color: @kyouko;
+  }
+}
+
+
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @light-gray;
+    }
+
+    &.string,
+    &.variable,
+    &.parameters,
+    &.array {
+      color: @syntax-text-color;
+    }
+
+    &.heading,
+    &.identity {
+      color: @sayaka;
+    }
+
+    &.bold {
+      color: @mami;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @madoka;
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: darken(@kyouko, 10%);
+  }
+
+}
+
+.support {
+
+  &.class {
+    color: @sayaka;
+  }
+
+  &.function  {
+    color: @kyouko;
+
+    &.any-method {
+      color: @sayaka;
+    }
+  }
+}
+
+.entity {
+  &.name.function {
+    color: @homura;
+  }
+  &.name.type {
+    color: @madoka; // 23
+  }
+
+  &.other.inherited-class {
+    color: @madoka;
+  }
+  &.name.class, &.name.type.class {
+    color: @mami;
+  }
+
+  &.name.section {
+    color: @sayaka;
+  }
+
+  &.name.tag {
+    color: @kyouko;
+  }
+
+  &.other.attribute-name {
+    color: @mami;
+
+    &.id {
+      color: @sayaka;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @mami;
+  }
+
+  &.link {
+    color: @homura;
+  }
+
+  &.require {
+    color: @sayaka;
+  }
+
+  &.selector {
+    color: @homura;
+  }
+
+  &.separator {
+    background-color: @gray;
+    color: @syntax-text-color;
+  }
+}
+
+.none {
+  color: @syntax-text-color;
+}
+
+.markup {
+  &.bold {
+    color: @homura;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @madoka;
+  }
+
+  &.deleted {
+    color: @kyouko;
+  }
+
+  &.italic {
+    color: @homura-vibrant;
+    font-style: italic;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: @sayaka-off;
+  }
+// NOTE: Change maybe
+  &.inserted {
+    color: @madoka;
+  }
+
+  &.list {
+    color: @kyouko;
+  }
+
+  &.quote {
+    color: @mami;
+  }
+
+  &.raw.inline {
+    color: @madoka;
+  }
+}
+
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+  &.heading {
+    color: @madoka;
+  }
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+  padding-left: 1px;
+}
