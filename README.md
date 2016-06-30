@@ -1,27 +1,38 @@
 # mahou-shoujo-syntax theme
 
+>It may be a tragedy, but it'll all be part of the script.
+The play stops on Walpurgisnacht,
+and the earth does not turn even once more.
+The story will not change.
+Tomorrow, and the day after, is the night of Walpurgis.
+
 A dark syntax theme based off of the Anime: Puella Magi Madoka Magica
 
 ## Color Palette
 
-![Magical Girls]()
+![Magical Girls](https://u.pomf.is/jqlbpr.png)
 
 ## Screenshot
 
-Ruby:
-![Ruby]()
+### Ruby:
 
-C:
-![C]()
+![Ruby](https://u.pomf.is/oymdaw.png)
 
-Javascript
-![JS]()
+### C:
 
-HTML:
-![HTML]()
+![C](https://u.pomf.is/ifszxi.png)
 
-Python:
-![Python]
+### Javascript:
+
+![JS](https://u.pomf.is/xjyqmt.png)
+
+### HTML:
+
+![HTML](https://u.pomf.is/yiicrw.png)
+
+### Python:
+
+![Python](https://u.pomf.is/fgptti.png)
 
 ## Notes
 - Thank you [jmcalaway](https://github.com/jmcalaway) for highlight and bracket-matcher code
