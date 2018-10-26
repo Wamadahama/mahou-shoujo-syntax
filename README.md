@@ -10,29 +10,29 @@ A dark syntax theme based off of the Anime: Puella Magi Madoka Magica
 
 ## Color Palette
 
-![Magical Girls](https://u.pomf.is/jqlbpr.png)
+![Magical Girls](images/pallete/xd.png)
 
 ## Screenshot
 
 ### Ruby:
 
-![Ruby](https://u.pomf.is/oymdaw.png)
+![Ruby](images/ruby.png)
 
 ### C:
 
-![C](https://u.pomf.is/ifszxi.png)
+![C](images/c.png)
 
 ### Javascript:
 
-![JS](https://u.pomf.is/xjyqmt.png)
+![JS](images/js.png)
 
 ### HTML:
 
-![HTML](https://u.pomf.is/yiicrw.png)
+![HTML](images/html.png)
 
 ### Python:
 
-![Python](https://u.pomf.is/fgptti.png)
+![Python](images/python.png)
 
 ## Notes
 - Thank you [jmcalaway](https://github.com/jmcalaway) for highlight and bracket-matcher code
